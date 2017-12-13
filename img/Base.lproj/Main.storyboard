@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="img" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image0" translatesAutoresizingMaskIntoConstraints="NO" id="wbN-mX-TvT">
+                                <rect key="frame" x="107" y="118" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wbN-mX-TvT" secondAttribute="height" multiplier="1:1" id="588-pb-PmX"/>
+                                    <constraint firstAttribute="width" constant="200" id="Ot0-rb-tpd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="-1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="250" placeholderIntrinsicHeight="250" image="Image5" translatesAutoresizingMaskIntoConstraints="NO" id="rIo-3N-SN3">
+                                <rect key="frame" x="103.66666666666669" y="414.66666666666663" width="207" height="206.99999999999989"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rIo-3N-SN3" secondAttribute="height" multiplier="1:1" id="2Gx-05-cu1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99914282560000001" green="0.94358173950000002" blue="0.40584980549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rIo-3N-SN3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="150" id="3fr-sb-ZyS"/>
+                            <constraint firstItem="rIo-3N-SN3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/2" id="fse-rJ-O2L"/>
+                            <constraint firstItem="wbN-mX-TvT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="qar-EM-sxP"/>
+                            <constraint firstItem="rIo-3N-SN3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rrw-v4-wGu"/>
+                            <constraint firstItem="wbN-mX-TvT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wy8-YI-9dn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="img" destination="wbN-mX-TvT" id="asS-Y3-9u2"/>
+                        <outlet property="img1" destination="rIo-3N-SN3" id="Z3B-Kg-XsZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-280.80000000000001" y="-110.19490254872565"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image0" width="300" height="300"/>
+        <image name="Image5" width="310" height="309"/>
+    </resources>
+</document>
